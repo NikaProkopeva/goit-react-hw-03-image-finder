@@ -1,4 +1,4 @@
-.ImageGallery {
+.ImageStyles {
   display: grid;
   width: calc(100vw - 48px);
   max-width: 1440px;

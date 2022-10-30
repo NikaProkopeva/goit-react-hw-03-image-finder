@@ -14,6 +14,7 @@ export const ImageGallery = ({ data, onClick }) => {
   return (
     <>
       <ul className={imageStyles.ImageGallery} onClick={imageClick}>
+        <img loading="Lazy" alt="foto" />
         <ImageGalleryItem images={data} />
       </ul>
     </>

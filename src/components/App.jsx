@@ -2,11 +2,11 @@ import { Component } from 'react';
 import { Watch } from 'react-loader-spinner';
 import { ServiceAPI } from './API';
 import { ImageGallery } from './ImageGallery';
-import s from './ImageGallery/ImageGallery.module.css';
+import ImageGalleryModule from './ImageGallery/ImageGallery.module.css';
 import { Searchbar } from './Searchbar';
 import { Button } from './Button';
 import { Modal } from './Modal';
-
+// import * as API from 'services/api';
 export class App extends Component {
   state = {
     query: '',
@@ -111,7 +111,7 @@ export class App extends Component {
         )}
 
         {status === 'pending' && (
-          <div className={s.Watch}>
+          <div className={ImageGalleryModule.Watch}>
             <Watch
               color="#00BFFF"
               height={200}
@@ -122,7 +122,7 @@ export class App extends Component {
         )}
 
         {status === 'rejected' && (
-          <div className={s.ImageGallery}>
+          <div className={ImageGalleryModule.ImageGallery}>
             <p>{`Something went wrong! ${error}`}</p>
           </div>
         )}
